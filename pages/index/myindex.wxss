@@ -1,1 +1,8 @@
 /* pages/index/myindex.wxss */
+
+.top{
+  height: 200px;
+  width: 100%;
+}
+
+.banner{}

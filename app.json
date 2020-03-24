@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/myindex",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/index/myindex"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,10 +13,27 @@
 
   "tabBar":{
     "color":"#000",
-    "selectedColor":"",
+    "selectedColor":"#2a5caa",
     "list":[
       {
-        "text":"首页",
+        "pagePath":"pages/index/myindex",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/index/myindex",
+        "text": "项目"
+      },
+      {
+        "pagePath": "pages/index/myindex",
+        "text": "体系"
+      },
+      {
+        "pagePath": "pages/index/myindex",
+        "text": "导航"
+      },
+      {
+        "pagePath": "pages/index/myindex",
+        "text": "公众号"
       }
     ]
   },

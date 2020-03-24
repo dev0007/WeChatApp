@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    baseurl:"https://www.wanandroid.com/banner/json"
   }
 })
