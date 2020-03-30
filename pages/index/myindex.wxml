@@ -1,11 +1,24 @@
 <!--pages/index/myindex.wxml-->
 <view class="page">
   <view class="top">
-    <swiper class="banner">
-      <swiper-item wx:for="{{bannerlist}}" wx:key="index" autoplay>
-        <image class="bannerimage" src="{{item.imagePath}}"></image>
-        <text class="bannertext">{{item.title}}</text>
+    <swiper class="banner" autoplay="ture" duration="300" interval="3000">
+      <swiper-item wx:for="{{bannerlist}}" wx:key="index">
+        <view>
+          <image class="bannerimage" src="{{item.imagePath}}" mode="scaleToFill"></image>
+          <view class="bannertext">{{item.title}}</view>
+          <text class="indicator">{{index+1}}/{{bannerlist.length}}</text>
+        </view>
       </swiper-item>
     </swiper>
   </view>
+  
+  <view class="liststyle" wx:for="{{articleList.datas}}" wx:key="index">
+    <text class="listtext">{{item.title}}</text>
+    <view class="liststyle2">
+      <text>{{item.niceDate}}</text>
+      <text>{{item.shareUser}}</text>
+      <image src="../../images/like.png" class="imge"></image>
+    </view>
+  </view>
+
 </view>

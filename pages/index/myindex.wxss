@@ -3,6 +3,53 @@
 .top{
   height: 200px;
   width: 100%;
+  position: relative;
 }
 
-.banner{}
+.banner{
+  height: 200px;
+}
+
+.bannerimage{
+  width: 100%;
+}
+.bannertext{
+  width: 100%;
+  background: rgba(107, 107, 107, 0.103);
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+}
+.indicator{
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding: 8px;
+}
+
+.liststyle{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  border-bottom: 1rpx #cdcdcd solid;
+}
+
+.liststyle2{
+  position: relative;
+}
+
+.imge{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
